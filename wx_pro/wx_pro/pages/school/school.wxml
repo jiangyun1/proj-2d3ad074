@@ -1,0 +1,33 @@
+<!--pages/school/school.wxml-->
+
+<swiper catchtap="toNews"  indicator-dots indicator-color='pink'indicator-active-color='red' autoplay circular>
+ <block wx:for="{{resData}}">
+  <swiper-item>
+  
+       <image src="{{item.nimg}}" data-id="{{item.nid}}" style="width:750rpx;height:500rpx;"></image>
+  </swiper-item>
+  </block>
+ 
+       
+</swiper>
+
+  <view class="resD">
+    <block wx:for="{{resData}}" wx:for-item="map">
+      
+      <view id="tmpContainer">
+    <view class="avatar_date">
+      <image src='/pages/images/logo.png' class="logo" mode="widthFix"></image>
+      <text>新职教务处{{map.ntime}}</text>
+    </view>
+    <text class="company">{{map.ntitle}}</text>
+    <image class="content_img" src="{{map.nimg}}"></image>
+    <text class="content">{{map.ncontent}}</text>
+    <!--<view class="love_attention">
+      <image src="{{detail_love_image1}}"></image>
+      <text>{{love_count}}</text>
+      <image src="{{detail_love_image2}}"></image>
+      <text>{{attention_count}}</text>
+    </view>-->
+  </view>
+    </block>
+  </view>

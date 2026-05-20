@@ -1,0 +1,19 @@
+/* pages/stu/stu.wxss */
+#both{
+  height: 100%;
+}
+.tx1{
+  margin-top: -110rpx;
+margin-left: 190rpx;
+}
+.tx2{
+  color:#8b8686;
+ 
+  font-size: 26rpx;
+  margin-top: 15rpx;
+margin-left: 190rpx;
+}
+.tex{
+  margin-left: 60rpx;
+  margin-top: -60rpx;
+}

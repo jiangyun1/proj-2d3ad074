@@ -1,0 +1,37 @@
+page{
+  background: white;
+  opacity:0.8;
+}
+.list-msg1 {
+    margin-top: -200rpx;
+    background:rgb(236, 234, 234) 
+}
+.contains{
+  width: 100%;
+  margin-top: -28rpx;
+  border-bottom: 2rpx dashed gray;
+  background: white;
+  opacity:0.8;
+}
+.firstcontains{
+margin-top:30rpx;
+}
+.secondcontains{
+margin-top:30rpx;
+}
+.thirdcontains{
+margin-top:30rpx;
+}
+.leftcontains{
+  margin-left:530rpx;
+  margin-top: -216rpx;
+}
+.fourthcontains{
+ margin-top:30rpx;
+}
+.fivecontains{
+ margin-top:30rpx;
+}
+.sexcontains{
+ margin-top:30rpx;
+}

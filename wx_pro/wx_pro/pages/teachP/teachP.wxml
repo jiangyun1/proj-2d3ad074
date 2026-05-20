@@ -1,0 +1,9 @@
+<!--pages/teachP/teachP.wxml-->
+<block wx:for="{{resData}}" >
+  <van-cell title="{{item.tname}}" is-link value="点击教评"data-id="{{item.tid}}" bindtap="toTp"
+  is-link bind:click="showPopup"/>
+  <van-popup show="{{ show }}" bind:close="onClose" round position="bottom" custom-style="height: 20%;" 
+  closeable style="text-algin:center;"
+  ><text style="font-size:28rpx;display:block;color:blue;margin-left:70rpx;margin-top:50rpx;">你已经教评过该导师了！</text></van-popup>
+ 
+</block>

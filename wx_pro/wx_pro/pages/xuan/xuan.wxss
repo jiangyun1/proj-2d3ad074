@@ -1,0 +1,5 @@
+/* pages/xuan/xuan.wxss */
+.btn{
+  width: 240px;
+  color: red;
+}

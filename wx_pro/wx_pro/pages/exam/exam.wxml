@@ -1,0 +1,17 @@
+<view class="list-msg1">
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;text-align:center;">
+    <picker-view-column>
+      <view  wx:for="{{aa}}" wx:key="index" style="line-height: 50px" data-name="{{index}}" bindtap="search">{{item}}</view> 
+    </picker-view-column>
+  </picker-view>
+</view>
+<view>
+<view class="contains" wx:for="{{selectall}}" wx:key="index">
+  <view class="firstcontains">科目:{{item.cname}}</view>
+  <view class="secondcontains">类别:{{item.ctname}}</view>
+  <view class="thirdcontains">学分:{{item.ccredit}}</view>
+  <view class="leftcontains"><view class="fourthcontains">成绩:{{item.sumexam}}</view>
+  <view class="fivecontains">平时:{{item.normalexam}}</view>
+  <view class="sexcontains">末考:{{item.testexam}}</view></view>
+</view>
+</view>

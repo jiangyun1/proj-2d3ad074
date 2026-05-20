@@ -1,0 +1,51 @@
+<!--pages/stu/stu.wxml-->
+<view id="both">
+  <view id="top">
+    <image src="https://6b66-kfhj-950f2-1300497089.tcb.qcloud.la/s.png?sign=aa7133e1c34c80fd1fb068b4aef4c690&t=1571833163"       mode="widthFix" style="width:110rpx;margin-left:30rpx;margin-top:30rpx;"></image>
+    <view class="tx1">
+      <text>hello,{{resData.sname}}同学</text>
+    </view>
+    <view class="tx2">
+      <!-- <text>新乡职业技术学院</text> -->
+    </view>
+    <view class="center1"   bindtap="toInfo" data-xid="{{resData.stuid}}">
+      <image src="https://6b66-kfhj-950f2-1300497089.tcb.qcloud.la/552cc19e3bee7_64.png?sign=61082c979bfef0786010b848200725ee&t=1571878955" mode="widthFix" style="width:50rpx;margin-left:30rpx;margin-top:50rpx;"></image>
+      <view class="tex">
+      <text style="margin-left:40rpx;margin-bottom:100rpx;font-size:26rpx;">我的信息</text> 
+      <text style="margin-left:480rpx;color:#a39f9f; ">></text>
+      </view>    
+    </view>
+    
+    <view class="center1" bindtap="toCourse" data-classid="{{resData.classid}}" data-sid="{{resData.sid}}">
+      <image src="https://6b66-kfhj-950f2-1300497089.tcb.qcloud.la/552cc674bd858_64.png?sign=1e4fec7865e32e596e756b4896618696&t=1571878286" mode="widthFix" style="width:50rpx;margin-left:30rpx;margin-top:50rpx;"></image>
+      <view class="tex">
+      <text style="margin-left:40rpx;margin-bottom:100rpx;font-size:26rpx;">课表查询</text> 
+      <text style="margin-left:480rpx;color:#a39f9f; ">></text>
+      </view>    
+    </view>
+
+    <view class="center1"  bindtap="toExam" data-xid="{{resData.stuid}}">
+      <image src="https://6b66-kfhj-950f2-1300497089.tcb.qcloud.la/SEL.png?  sign=ece9254a96f70f2f4fc7392aeefa3f03t=1571876723" mode="widthFix" style="width:50rpx;margin-left:30rpx;margin-top:50rpx;"></image>
+      <view class="tex">
+      <text style="margin-left:40rpx;margin-bottom:100rpx;font-size:26rpx;">成绩查询</text> 
+      <text style="display:block;margin-top:-50rpx;margin-left:620rpx;color:#a39f9f;"> > </text>
+      </view>    
+    </view>
+
+    <view class="center1" bindtap="toTeach" data-xid="{{resData.stuid}}">
+      <image src="https://6b66-kfhj-950f2-1300497089.tcb.qcloud.la/1229970.png?sign=1153f68e8e5414d50e55e2c4e434e41a&t=1571878372"  mode="widthFix" style="width:50rpx;margin-left:30rpx;margin-top:50rpx;"></image>
+      <view class="tex">
+      <text style="margin-left:40rpx;margin-bottom:100rpx;font-size:26rpx;">掌上评教</text> 
+      <text style="margin-left:480rpx;color:#a39f9f; ">></text>
+      </view>    
+    </view>
+    
+    <view class="center1">
+      <image src="https://6b66-kfhj-950f2-1300497089.tcb.qcloud.la/1229017.png?sign=8f7d98a2fe4d90bbbcb2e92534fc8112&t=1571878426" mode="widthFix" style="width:50rpx;margin-left:30rpx;margin-top:50rpx;"></image>
+      <view class="tex">
+      <text style="margin-left:40rpx;margin-bottom:100rpx;font-size:26rpx;">设置</text> 
+      <text style="margin-left:530rpx;color:#a39f9f; ">></text>
+      </view>    
+    </view>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/detail/detail.wxml-->
+<view id="detailContainer">
+
+
+
+  <image class="detail_header" src="{{newsData.nimg}}"></image>
+  <!--<image catchtap="musicControl" class="musicImg" src="{{isMusicPlay?'/images/music/music-start.png':'/images/music/music-stop.png'}}"></image>-->
+  <view class="detail_author_date">
+    <image src="/pages/images/logo.png" mode="widthFix"></image>
+    <text>新职教务处</text>
+    <text>发布于</text>
+    <text>{{date}}</text>
+  </view>
+  <text class="detail_company">{{newsData.ntitle}}</text>
+  <view class="detail_collection_share">
+    <view class="col_share_img">
+     <image catchtap="handleCollection" src="{{isCollected?'/pages/images/collection.png':          '/pages/images/collection-anti.png'}}"></image>
+      
+      <image catchtap="handleShare" src="/pages/images/share.png"></image>
+    </view>
+    <view class="line"></view>
+  </view>
+  
+  <text class="detail_content">{{newsData.ncontent}}</text>
+  <button open-type="share">转发此文章</button>
+  
+</view>

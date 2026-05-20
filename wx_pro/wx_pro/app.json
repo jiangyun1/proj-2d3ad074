@@ -1,0 +1,45 @@
+{
+  "pages": [
+   
+    "pages/mysql/mysql",
+    "pages/teachP/teachP",
+    "pages/stu/stu",
+    
+    
+    "pages/course/course",
+    "pages/tecaherP/teacherP",
+    "pages/school/school",
+    "pages/login/login",
+    
+    "pages/news/news",
+    "pages/xuan/xuan",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/myInfo/myInfo"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f0f",
+    "navigationBarTitleText": "WeChat,Xuan",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/school/school",
+        "text": "校园公告",
+        "iconPath": "/pages/images/yuedu.png",
+        "selectedIconPath": "/pages/images/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/stu/stu",
+        "text": "我的",
+        "iconPath": "/pages/images/dianying.png",
+        "selectedIconPath": "/pages/images/dianying_hl.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

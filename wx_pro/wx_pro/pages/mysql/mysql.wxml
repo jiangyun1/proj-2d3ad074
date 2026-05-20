@@ -1,0 +1,9 @@
+<view class="container">
+<view class='fonts'>
+<text class='fontchange'>NiceSchool\n</text>
+<text>——小程序学生端——</text>
+</view>
+<view>
+<button class='login' bindtap="ToNext">登录</button>
+</view>
+</view>

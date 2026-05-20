@@ -1,0 +1,23 @@
+<!--pages/course/course.wxml-->
+<view >
+  <view class="infos">
+    <text class="info" style="">课表</text>
+  </view>
+  <block wx:for="{{resData}}"  >
+  <van-cell-group>
+    <van-cell title="课程" value="{{item.cname}}" />    
+    <van-cell title="课时" value="{{item.cperiod}}"  />
+     <van-cell title="修学类型" value="{{item.studytype}}" />
+    <van-cell title="获得学分" value="{{item.ccredit}}" />
+   
+    <van-cell title="上课时间" value="星期{{item.wid}}第{{item.schid}}节" label="按照节时间" border="{{ true }}" />
+</van-cell-group>   
+ <view class="infos">
+    
+  </view>
+  </block>
+ 
+   
+  
+  
+</view>

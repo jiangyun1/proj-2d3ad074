@@ -1,0 +1,26 @@
+<view class="section">
+  <view class="section__title">movable-view区域小于movable-area</view>
+  <movable-area style="height: 200px; width: 200px; background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area>
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+  </view>
+ <text>{{text}}</text>
+<!--bindtap绑定事件
+if  else 跟Java一样
+for 循环
+-->
+  <button type="xuan" bindtap="btnClick" class="btn">这是一个按钮</button>
+ <view wx:if="{{show}}">{{texts}}</view>
+ <view wx:else>else</view>
+ <view wx:for="{{news}}" wx:for-item="itemx">
+ 循环三次
+ {{itemx}}
+ </view>
+ <!--引入别的页面  也就是组件-->
+ <include  src="../templates/moban"/>
+
+<button bindtap="gogogo"> 调用</button>
+</view>

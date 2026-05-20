@@ -1,0 +1,19 @@
+<view class="infos">
+  <text class="info" style="">基本信息</text>
+</view>
+<van-cell-group>
+  <van-cell title="姓名" value="{{resData.sname}}"  is-link bind:click="showPopup"/>
+  <van-popup show="{{ show }}" bind:close="onClose">不可修改</van-popup>
+   <van-cell title="学号" value="{{resData.stuid}}" />
+    <van-cell title="性别" value="{{resData.sgender}}" />
+ <van-cell title="手机" value="{{resData.sphone}}" />
+  <van-cell title="地址" value="{{resData.saddress}}" label="详细地址" border="{{ true }}" />
+</van-cell-group>
+<view style="margin-top:50rpx;">
+</view>
+<van-cell-group >
+  <van-cell title="民族" value="{{resData.snation}}" />  
+    <van-cell title="身份证" value="{{resData.scardid}}" />
+    <van-cell title="政治面貌" value="共青团员" />
+   <van-cell title="生日" value="{{date}}" label="出生日期" border="{{ true }}" />
+</van-cell-group>
